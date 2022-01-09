@@ -19,18 +19,18 @@ app.get('/api/timeout', (req, res) => {
     sleep.sleep(60)
     console.log('sleep 끝남. 200을 리턴')
     return res.json({id:'1234', title:'어서와'})
-})
+})wefwefwefw
 
 app.get('/api/episode', (req, res) => {
     console.log('episode api 요청을 받음.')
     var jsonObj = {
         episodeList: [
-            { title: '어서와 한국은 처음이지 1화', thumbnailUrl: 'https://xxxx', like: 2147483648 },
+            { title: '어서와 한국은 처음이지 1화', thumbnailUrl: 'https://xwfwefxxx', like: 2147483648 },
             { title: '어서와 한국은 처음이지 2화', thumbnailUrl: 'https://xxxx' }
         ]
 //        hasMore: false
     }
-    return res.json(jsonObj)
+    return res.json(jsonObj)fwfwef
 })
 
 http.createServer(app).listen(8888, function() {
